@@ -1,0 +1,292 @@
+/*ESTILOS PARA DIARIO PROVINCIAS*/
+
+/*ESTILOS GENERALES*/
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: url('../imagenes/fondo-pagina.png');
+	font-family: 'advent_proregular';
+	color: #222;
+}
+
+body,h1,h2,h3,ul,li,figure{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	margin-top: 0;
+}
+
+.contenedorpagina{
+	max-width: 1250px;
+	margin: 0 auto;
+	background: #FAFAFA
+}
+
+/*ESTILOS PARA BARRA DE PROGRESO*/
+#progreso{
+    background:red;
+    height:4px;
+    position:fixed;
+    top:0;
+    left:0;
+    box-shadow: 2px 2px 2px grey;
+}
+
+/*ESTILOS HEADER*/
+
+.contenedorpagina > header{
+	background: linear-gradient(to right, #000, transparent), 
+				url('../imagenes/cabecera.jpg') 0/cover;
+				/* el "0" es posicion: en este caso es eje X  y el eje Y por defoult es 50%*/
+}
+
+.logo{
+	padding: 1em;
+	font-size: 3em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1em 0;
+	background: #000;
+	list-style-type: none;
+}
+
+nav li{
+	margin: 0.2em 1em;
+}
+
+nav a{
+	text-transform: uppercase;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+nav a:hover{
+	color: #7493D6;
+}
+
+/*ESTILOS MAIN*/
+
+/*Estructura de Columnas*/
+
+.contenedorcolumnas{
+	display: flex;
+}
+
+.columnaizquierda,
+.columnaderecha{
+	flex-basis: 20%;
+	padding: 1.5em;
+}
+
+.columnacentral{
+	flex-basis: 60%;
+	padding: 1.5em;
+	border-left: 1px dashed #989898;
+	border-right: 1px dashed #989898;
+}
+
+/*Columna Izquierda y Derecha*/
+
+.columnaizquierda a,
+.columnaderecha a{
+	color: #4871CB;
+}
+
+.columnaizquierda a:hover,
+.columnaderecha a:hover{
+	text-decoration: underline;
+}
+
+/*Solo Columna Izquierda*/
+
+.publicidad{
+	margin-bottom: 2em;
+}
+
+.publicidad p{
+	font-size: 0.8em;
+	color: #878787;
+}
+
+.publicidad img{
+	border-top: 8px solid #D3D3D3;
+	border-bottom: 8px solid #D3D3D3;
+}
+
+.titulocolizq{
+	padding: 0.4em;
+	background: #6D8ED7;
+	color: #FFF; 
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.columnaizquierda h2{
+	color: #595959;
+	font-size: 1.2em;
+}
+
+.columnaizquierda li{
+	list-style-type: none;
+	padding: 0.5em 0;
+	border-bottom: 1px solid #DCDCDC;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.columnaizquierda li a:hover{
+	text-decoration: none;
+}
+
+/*Solo Columna Derecha*/
+
+.notilateral{
+	margin-bottom: 2em;
+}
+
+.notilateral img{
+	max-width: 100%;
+}
+
+.notilateral figcaption{
+	font-size: 0.8em;
+	color: #787878;
+}
+
+.notilateral h2{
+	margin-top: 0.4em;
+	font-size: 1.2em;
+}
+
+/*Columna Central*/
+
+.migaspan{
+	margin: 0.5em 0 1em 0;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #444;
+}
+/*Art. dentro de la Col. Central*/
+
+.columnacentral article h1{
+	margin-bottom: 0.3em;
+	color: #000;
+	font-size: 2.5em;
+	line-height: 1.1em;
+}
+
+.columnacentral article h2{
+	margin-bottom: 1em;
+	color: #444;
+	font-size: 1.6em;
+	line-height: 1.1em;
+	font-weight: normal;
+}
+
+.columnacentral figure img{
+	max-width: 100%;
+}
+
+.columnacentral figcaption{
+	margin-top: 0.5em;
+	color: #646464;
+	font-size: 0.9em;
+}
+
+.columnacentral figcaption b{
+	color: #000; 
+}
+
+.autor{
+	margin: 2em 0 0 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.articulodatos time{
+	color: #646464;
+	font-style: italic;
+}
+
+.columnacentral article p{
+	line-height: 1.4em;
+}
+
+.columnacentral article aside{
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid #737373;
+}
+
+.columnacentral article aside p{
+	text-transform: uppercase;
+}
+
+.enlacesinforelacionada{
+	display: flex;
+	justify-content: space-around;
+}
+
+.enlacesinforelacionada a{
+	flex-basis: 45%;
+	padding: 1em;
+	background: #D8D8D8;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	color: #000;
+}
+
+.enlacesinforelacionada a:hover{
+	background: #4871CB;
+	color: #AAB4CB;
+}
+
+/*FOOTER PPAL DE LA PÁGINA*/
+
+.contenedorpagina > footer small{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.contenedorpagina > footer{
+	padding: 2em 0;
+	text-align: center;
+	background: #E5E5E5;
+}
+
+.contenedorpagina > footer a{
+	padding: 0 0.2em;
+	font-size: 0.9em;
+}
+
+.contenedorpagina > footer a, 
+.contenedorpagina > footer{
+	color: #555;
+}
+
+.logoprisa{
+	margin-bottom: 1em;
+}
+
+footer address{
+	font-style: normal;
+}
+
+
